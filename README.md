@@ -27,35 +27,35 @@ The data is fit using _Parallel tempering_ algorithm or _Simulated Annealing_
 functions.
 
 # Class methods
-* `Equations`: dynamic differential equations for the SEIR model
+* `Equations`: dynamic differential equations for the SEIR model.
   The differential equations describe the evolution of the
   infection with an incubation periodic. Four population
   compartments are chosen, namely, Susceptible (S), Exposed
   (E), Infected (I), Recovered (R).
 
 
-* `R0`: Calculation of R0 for the given set of parameters
+* `R0`: Calculation of R0 for the given set of parameters.
 The reproduction number can be determined directly from the
 parameters. It can also be used to determine the herd
 immunity population.
 
-* `Equilibrium`: Solves for the equilibrium condition
+* `Equilibrium`: Solves for the equilibrium condition.
 The SEIR models reach an endemic equilibrium at R0 > 1 and
 a disease free equilibrium at R0 < 1. One can find out by
 solving the equation for steady state.
 
-* `Dynamic`: Solves for the time dependent condition
+* `Dynamic`: Solves for the time dependent condition.
 The SEIR model has a time dependent behavior where one can
 observe the evolution of Susceptible (S), Exposed
 (E), Infected (I), and Recovered (R) populations.
 
-* `FitData`: Function that takes data and fits a SEIR(S) model
+* `FitData`: Function that takes data and fits a SEIR(S) model.
 Obtain the model parameters and R0 for a time series data
 using a dynamic data fitting. The data needs to be in the
 format `[time, S, E, I, R]`, where each entry is a column
 vector.
 
-* `plotDynamic`: plots the time dependent condition
+* `plotDynamic`: plots the time dependent evolution
 
 # Parameter description
 | Parameters  | Description                                   |
