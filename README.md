@@ -19,7 +19,7 @@ The following four models are included in the `SEIRModel.m` class:
 * `closedSEIRS`: SEIR model in closed system with a fading immunity.
 * `vitalSEIRS`: SEIR model with fading immunity and vital dynamics.
 
-# Modeling methodology
+# Solution methodology
 This model uses the `matlab` ODE function `ode15s` to solve for the time-dependent
 evolution, and `fsolve` to compute the steady-state where applicable.
 
